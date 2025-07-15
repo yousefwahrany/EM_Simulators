@@ -1,0 +1,6 @@
+function [integral] = ln_integral(x1 ,x2 , X_mid)
+    
+    integral = (x2 - X_mid) * log(abs(X_mid - x2)) - ...
+         (x1 - X_mid) * log(abs(X_mid - x1)) - ...
+         x2 + x1;
+end
